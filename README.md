@@ -1,2 +1,2 @@
 # CatvsDog
-This is a project MLOps for image classification
+This is a project of MLOps for image classification
