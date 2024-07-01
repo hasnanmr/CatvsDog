@@ -1,5 +1,5 @@
 # CatvsDog Image Classification
-**This is a project of MLOps for image classification**. The project will be used pytorch framework and transformer based for image classification task Vision Transformer which is achieved novelty in computer vision task.
+**This is a project of MLOps for image classification**. The project will be used pytorch framework and transformer based for image classification task Vision Transformer which is achieved novelty in computer vision task. 
 
 The dataset is downloaded from [CatvsDog Kaggle dataset](https://www.kaggle.com/datasets/karakaggle/kaggle-cat-vs-dog-dataset/data)
 The datasets are consist of:
