@@ -47,16 +47,6 @@ train_inputs, train_labels = dataset_to_tensors(train_dataset)
 val_inputs, val_labels = dataset_to_tensors(val_dataset)
 test_inputs, test_labels = dataset_to_tensors(test_dataset)
 
-# # Save the datasets with confirmation
-# try:
-#     torch.save(train_dataset, 'train_dataset.pt')
-#     torch.save(val_dataset, 'val_dataset.pt')
-#     torch.save(test_dataset, 'test_dataset.pt')
-#     print('The subset has been saved successfully.')
-# except Exception as e:
-#     print(f'Error occurred while saving the subset: {e}')
-
-
 # Save the datasets as tensors
 try:
     torch.save((train_inputs, train_labels), 'train_dataset_2.pt')
