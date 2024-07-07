@@ -13,5 +13,20 @@ The datasets consist of the following images:
 2. Transform into tensor type
 3. Normalize the tensor using mean and STD
 4. Split the dataset into train evaluation and testing datasets (80, 10, 10) with generator seed to ensure the split always generates the exact number
-5. Save the subset into **.pth** file so it can be loaded next for training the model
+5. Save the subset into **.pt** file so it can be loaded next for training the model
 6. The sizes of the subsets for data training, evaluation, and testing are **19966**, **2497**, and **2495**, respectively.
+
+## How to use saved subset
+1. Load the subset using the following code:
+'''bash
+train_dataset = torch.load('train_dataset.pt')
+val_dataset = torch.load('val_dataset.pt')
+test_dataset = torch.load('test_dataset.pt')
+'''
+2. Use the dataset in the training model 
+'''bash
+# Create DataLoaders
+train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
+val_loader = DataLoader(val_dataset, batch_size=batch_size, shuffle=False)
+test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=False)
+'''
